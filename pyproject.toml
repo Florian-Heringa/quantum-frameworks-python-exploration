@@ -1,0 +1,33 @@
+[project]
+name = "quantum"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Florian-Heringa",email = "florian_music@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "qiskit (>=2.1.0,<3.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "pylatexenc (>=2.10,<3.0)",
+    "qutip (>=5.2.0,<6.0.0)",
+    "qiskit-aer (>=0.17.1,<0.18.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "cirq (>=1.5.0,<2.0.0)",
+    "qsimcirq (>=0.22.0,<0.23.0)",
+    "pennylane (>=0.41.1,<0.42.0)",
+    "qclib (>=0.1.14,<0.2.0)",
+    "qutip-qip (>=0.4.1,<0.5.0)",
+    "qiskit-ibm-runtime (>=0.40.1,<0.41.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
