@@ -2,8 +2,22 @@
 
 In this repository I hold my quantum explorations. For now it is mostly python work using Qiskit and QuTiP.
 
-## Resources
+## Qiskit
+[Qiskit](https://quantum.cloud.ibm.com/docs/en/guides) is the Quantum SDK for python made by IBM. It contains features to build and execute quantum circuits in simulation and on real hardware.
 
+- [01_QiskitIntroExpanded](./Python/Qiskit/01_QiskitIntroExpanded.ipynb)
+    - Expanded version of the Qiskit introduction tutorial found [here](https://quantum.cloud.ibm.com/docs/en/tutorials/hello-world). I included some additional context using QuTip and details on how to run the circuit locally with a Sampler or Estimator and what that means.
+- [02_SimulatingLargerUsingAer](./Python/Qiskit/02_SimulatingLargerUsingAer.ipynb)
+    - Another swimulation tutorial. Instead of running on real hardware in the cloud, we can use the Aer simulator to run larger systems (up to 20-25 qubits on standard hardware). The standard simulator also can't handle backends larger than 65 qubits, which Aer knows how to handle. Aer also has some other nice features like noise simulation. Again following the basic beats of the Qiskit Hello World example.
+- [03_ConnectToIBMQP](./Python/Qiskit/03_ConnectToIBMQP.ipynb)
+    - `WIP` Will show how to connect to IBM Quantum Cloud and run simulations on real hardware. Will be finished as soon as IBM accepts my credit card. Also includes a quick tutorial on sharing circuits between QuTip and Qiskit using QASM.
+- [04_StatePreparationWithQclib](./Python/Qiskit/04_StatePreparationWithQclib.ipynb)
+    - `WIP` QClib is a state preparation library built on Qiskit. Here we look at how to prepare states for use in a circuit.
+
+## Cirq
+
+
+## Resources
 
 ### Python
 - [Scientific Computing with Python](https://github.com/jrjohansson/scientific-python-lectures)
